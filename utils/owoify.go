@@ -18,7 +18,7 @@ func owoifyChars(text string) string {
 	var reLower = regexp.MustCompile("[lr]")
 	var text0 = reLower.ReplaceAllString(text, "w")
 
-var reUpper = regexp.MustCompile("[LR]")
+	var reUpper = regexp.MustCompile("[LR]")
 	return reUpper.ReplaceAllString(text0, "W")
 }
 
