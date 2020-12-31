@@ -2,10 +2,16 @@ package main
 
 import (
 	"fmt"
-	"github.com/yellowtides/utils/owoify"
+	"io/ioutil"
+	"log"
+
+	"github.com/yellowtides/owenbot-api/utils"
 )
 
 func main() {
-
-	fmt.Println("god is dead owo")
+	text, err := ioutil.ReadFile("assets/nietzsche.txt")
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Print(utils.Owoify(string(text)))
 }

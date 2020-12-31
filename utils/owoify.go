@@ -1,7 +1,6 @@
-package owoify
+package utils
 
 import (
-	"strings"
 	"regexp"
 )
 
@@ -17,7 +16,7 @@ func insertY(text string) string {
 
 func owoifyChars(text string) string {
     var reLower = regexp.MustCompile("[lr]")
-	text0 = reLower.ReplaceAllString(text, "w")
+	var text0 = reLower.ReplaceAllString(text, "w")
 	
     var reUpper = regexp.MustCompile("[LR]")
     return reUpper.ReplaceAllString(text0, "W")
