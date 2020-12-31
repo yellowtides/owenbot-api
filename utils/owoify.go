@@ -6,12 +6,12 @@ import (
 
 func inserty(text string) string {
 	var re = regexp.MustCompile("([nm])([oO])")
-	return re.ReplaceAllString(text, "$1y$2")
+	return re.ReplaceAllString(text, "${1}y$2")
 }
 
 func insertY(text string) string {
 	var re = regexp.MustCompile("([NM])([oO])")
-	return re.ReplaceAllString(text, "$1Y$2")
+	return re.ReplaceAllString(text, "${1}Y$2")
 }
 
 func owoifyChars(text string) string {
