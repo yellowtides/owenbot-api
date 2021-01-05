@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../owenbot-hs"
+		}
+	],
+	"remoteAuthority": "wsl+Ubuntu-20.04",
+	"settings": {}
+}
